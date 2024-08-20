@@ -2,10 +2,8 @@
 
 <img width="790" alt="Screenshot 2024-06-07 at 2 36 17 PM" src="https://github.com/user-attachments/assets/486f3f43-4da3-4887-9238-70c137c6b46c">
 
-![image](h![Uploading Screenshot 2024-08-19 at 9.14.35 PM.png…]()
-ttps://github.com/user-attachments/assets/939447a0-4ed2-4b69-8346-57c602c80fb4)
-
 ![image](https://github.com/user-attachments/assets/9be745ad-6728-4052-844a-7d9e1412299a)
+
 
 # USAGE
 ## ebpf config for ubuntu
@@ -30,8 +28,12 @@ bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
 ./bin/tcp_analyse_service
 ./bin/tcp_analyse
 ```
+
 ## run the ebpf part with PID
 ```
 ./bin/tcp_analyse_service -p $(PID from test service demo)
 ./bin/tcp_analyse -p $(PID from test client demo)
 ```
+
+# result
+![image](https://github.com/user-attachments/assets/187811d7-12b8-4182-b002-9be188115309)
